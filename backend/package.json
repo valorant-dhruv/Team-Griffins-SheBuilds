@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chain": "hardhat node --network hardhat",
+    "deploy": "hardhat deploy --export-all ../react-app/src/contracts/hardhat_contracts.json",
+    "generate": "hardhat generate",
+    "account": "hardhat account"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.12.5"
   }
 }

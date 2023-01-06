@@ -8,10 +8,10 @@ contract Storehash{
     //Inside the smart contract once when the data is stored inside the ipfs we get the content id of that image
 
     //Hence we create a mapping for it
-    mapping(address=>string) immutable public storefiles;
+    mapping(address=>string) public storefiles;
 
     //This is the function that stores the files
-    function storefile(string cid) public returns(bytes32)
+    function storefile(string memory cid) public returns(bytes32)
     {
         //Now that we got the content id of the particular file we encode
         storefiles[msg.sender]=cid;
