@@ -34,8 +34,8 @@ contract Will
         create_will.push(Create_will({Owner:_Owner,Owner_name:_OwnerName,property_type:_Property_type,property_description:_property_description,property_declartion: _property_declartion,cid:_cid}));
         Will_Link[count] = _Owner;
         count+=1;
+       }
 
-    }
 
    function getwillnumber() public view returns(uint[] memory)
    {
