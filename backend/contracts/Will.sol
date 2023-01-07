@@ -39,7 +39,7 @@ contract Will
 
    function getwillnumber() public view returns(uint[] memory)
    {
-       uint [] memory temp;
+      uint[] memory temp = new uint[](count);
        uint tempvar=0;
 
        for(uint i=0;i<count;i++)
