@@ -12,7 +12,7 @@ module.exports = {
   },
   networks: {
     polygon_mumbai: {
-      url: "https://ancient-skilled-surf.matic-testnet.discover.quiknode.pro/7b4f309e88e3a92395e1cd3f53a127991cfc40b3/",
+      url: "",
       accounts: [
         "",
       ],
