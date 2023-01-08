@@ -17,7 +17,6 @@ contract Lawyer is VRFConsumerBase,Ownable{
 
     //This is the array which holds all the account addresses of the lawyers
     address [] private lawyerslist;
-
     address public winner;
     uint256 public randomnumber;
 
@@ -70,6 +69,7 @@ contract Lawyer is VRFConsumerBase,Ownable{
         randomnumber=winningIndex;
          return winner;
     }
+
 
     /**
     * getRandomWinner is called to start the process of selecting a random winner
